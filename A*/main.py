@@ -18,4 +18,3 @@ def astar_static(table,start):
 
 def astar_grid(table,star,end):
     pass
-
