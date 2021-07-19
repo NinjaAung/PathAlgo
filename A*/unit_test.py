@@ -13,7 +13,8 @@ def test_astar_small():
         'G': (3,    [('D', 6), ('F', 3), ('Goal', 3)]),
         'Goal': (0, [('G', 3), ('F', 1)])
     }
-    assert astar(example_graph_small, 'A', 'Goal')
+    assert astar(example_graph_small, 'A', 'Goal') == (
+        'A', 'B', 'D', 'G', 'Goal')
 
 
 def test_astar_large():
